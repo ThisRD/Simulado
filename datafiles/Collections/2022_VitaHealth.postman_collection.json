@@ -1,0 +1,768 @@
+{
+	"info": {
+		"_postman_id": "586e5589-d3a7-468c-833d-276f8a8e2f9c",
+		"name": "2022_VitaHealth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"John Cena 2\",\r\n    \"email\": \"Jason_Nitzsche@yahoo.com.br\",\r\n    \"senha\": \"XLL4aaADvxQpJAK\",\r\n    \"data_nascimento\": 1642598537\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"John Cena 3\",\r\n    \"email\": \"Jason_Nitzsche@yahoo.com.br\",\r\n    \"senha\": \"XLL4aaADvxQpJAK2\",\r\n    \"data_nascimento\": 1642598537\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/1",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/1",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "saldo",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/saldo",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"saldo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valor\": \"999.00\",\r\n    \"usuarioId\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/saldo",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"saldo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valor\": \"999.90\",\r\n    \"usuarioId\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/saldo/19",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"saldo",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/saldo/19",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"saldo",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "produto",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/produto",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"produto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Celular Samsumg\",\r\n    \"descricao\": \"The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive\",\r\n    \"valor\": \"488.00\",\r\n    \"foto\": \"http://placeimg.com/640/480/technics\",\r\n    \"usuarioId\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/produto",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"produto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Celular Samsumg Galaxy\",\r\n    \"descricao\": \"The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive\",\r\n    \"valor\": \"488.00\",\r\n    \"foto\": \"http://placeimg.com/640/480/technics\",\r\n    \"usuarioId\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/produto/32",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"produto",
+								"32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/produto/10",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"produto",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "perfil",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dt_nascimento\": 1645185449,\r\n    \"peso\": 13,\r\n    \"altura\": 78,\r\n    \"status\": false,\r\n    \"usuarioId\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dt_nascimento\": 1645185449,\r\n    \"peso\": 13,\r\n    \"altura\": 78,\r\n    \"status\": false,\r\n    \"usuarioId\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/7",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/7",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "caminhada",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/caminhada",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"caminhada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tempoacumulado\": 11,\r\n\t\"status\": true,\r\n\t\"horario\": \"07:00\",\r\n\t\"domingo\": false,\r\n\t\"segunda\": false,\r\n\t\"terca\": false,\r\n\t\"quarta\": true,\r\n\t\"quinta\": false,\r\n\t\"sexta\": true,\r\n\t\"sabado\": true,\r\n\t\"perfilId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/caminhada",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"caminhada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tempoacumulado\": 11,\r\n\t\"status\": true,\r\n\t\"horario\": \"07:00\",\r\n\t\"domingo\": false,\r\n\t\"segunda\": false,\r\n\t\"terca\": false,\r\n\t\"quarta\": true,\r\n\t\"quinta\": false,\r\n\t\"sexta\": true,\r\n\t\"sabado\": true,\r\n\t\"perfilId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/caminhada/10",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"caminhada",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/caminhada/10",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"caminhada",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "corrida",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/corrida",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"corrida"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tempoacumulado\": 11,\r\n\t\"status\": true,\r\n\t\"horario\": \"07:00\",\r\n\t\"domingo\": false,\r\n\t\"segunda\": false,\r\n\t\"terca\": false,\r\n\t\"quarta\": true,\r\n\t\"quinta\": false,\r\n\t\"sexta\": true,\r\n\t\"sabado\": true,\r\n\t\"perfilId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/corrida",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"corrida"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tempoacumulado\": 11,\r\n\t\"status\": true,\r\n\t\"horario\": \"07:00\",\r\n\t\"domingo\": false,\r\n\t\"segunda\": false,\r\n\t\"terca\": false,\r\n\t\"quarta\": true,\r\n\t\"quinta\": false,\r\n\t\"sexta\": true,\r\n\t\"sabado\": true,\r\n\t\"perfilId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/corrida/10",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"corrida",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/corrida/10",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"corrida",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "corda",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/corda",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"corda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tempoacumulado\": 11,\r\n\t\"status\": true,\r\n\t\"horario\": \"07:00\",\r\n\t\"domingo\": false,\r\n\t\"segunda\": false,\r\n\t\"terca\": false,\r\n\t\"quarta\": true,\r\n\t\"quinta\": false,\r\n\t\"sexta\": true,\r\n\t\"sabado\": true,\r\n\t\"perfilId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/corda",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"corda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tempoacumulado\": 11,\r\n\t\"status\": true,\r\n\t\"horario\": \"07:00\",\r\n\t\"domingo\": false,\r\n\t\"segunda\": false,\r\n\t\"terca\": false,\r\n\t\"quarta\": true,\r\n\t\"quinta\": false,\r\n\t\"sexta\": true,\r\n\t\"sabado\": true,\r\n\t\"perfilId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/corda/10",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"corda",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/usuario/2/perfil/1/corda/10",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"usuario",
+								"2",
+								"perfil",
+								"1",
+								"corda",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_path",
+			"value": "https://61e565bc595afe00176e556a.mockapi.io/api/",
+			"type": "string"
+		}
+	]
+}
